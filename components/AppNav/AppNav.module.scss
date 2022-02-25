@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+
+.nav {
+  background-color: $navBG;
+  height: 56px;
+  padding-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    display: flex;
+    width: 80%;
+    height: 100%;
+
+    .logo {
+      width: 39px;
+      height: 44px;
+      align-self: flex-start;
+      position: relative;
+      top: 3px;
+      margin-right: 39px;
+    }
+
+    .menu_items {
+      display: flex;
+      width: fit-content;
+
+      .item {
+        line-height: 24px;
+        font-size: 1rem;
+        margin: 11px 0;
+        display: flex;
+        align-items: center;
+      }
+      .recent {
+        margin-left: 7px;
+        margin-right: 20px;
+        color: $navTextRecent;
+      }
+      .about {
+        margin-left: 20px;
+        margin-right: 7px;
+        color: $navTextAbout;
+      }
+    }
+    .right_items {
+      width: fit-content;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      .signin {
+        display: flex;
+        align-items: center;
+        .login {
+          line-height: 24px;
+          font-size: 1rem;
+          color: $navTextLogin;
+          margin-right: 10px;
+        }
+        .ri_logo {
+          width: 14px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,8 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/reset.css";
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
+import AppLayout from "../components/AppLayout/AppLayout";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <AppLayout {...pageProps}>
+      <Component {...pageProps} />
+    </AppLayout>
+  );
 }
 
-export default MyApp
+export default MyApp;
+
+//TODO: Check font
