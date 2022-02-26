@@ -14,13 +14,19 @@ function AppNav() {
           />
         </div>
         <div className={style.menu_items}>
-          <a className={`${style.item} ${style.recent}`}>Recent Articles</a>
-          <a className={`${style.item} ${style.about}`}>About</a>
+          <a id="recent" className={`${style.item} ${style.recent}`}>
+            Recent Articles
+          </a>
+          <a id="about" className={`${style.item} ${style.about}`}>
+            About
+          </a>
         </div>
 
         <div className={style.right_items}>
           <div className={style.signin}>
-            <a className={style.login}>Log in</a>
+            <a id="login" className={style.login}>
+              Log in
+            </a>
             <div className={style.ri_logo}>
               <Image
                 src={"/icons/arrow.svg"}

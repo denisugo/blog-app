@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "e2e": "testcafe --concurrency 3 chrome:headless __test__/*",
+    "e2e:github": "testcafe --concurrency 3 chrome:headless __test__/* --app 'yarn dev'"
   },
   "dependencies": {
     "next": "12.1.0",
@@ -19,6 +21,7 @@
     "@types/react": "17.0.39",
     "eslint": "8.9.0",
     "eslint-config-next": "12.1.0",
+    "testcafe": "^1.18.4",
     "typescript": "4.5.5"
   }
 }
