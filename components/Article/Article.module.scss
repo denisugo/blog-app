@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.article {
+  display: flex;
+  margin: 32px 0;
+
+  .image {
+    width: 274px;
+    height: 244px;
+  }
+
+  .content {
+    margin-left: 24px;
+    width: 557px;
+
+    h4 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .autorAndDate {
+      display: flex;
+      margin: 16px 0px;
+      color: $autorDateComments;
+      font-size: 14px;
+      line-height: 20px;
+
+      span {
+        margin: 0 12px;
+        font-size: 30px;
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 24px;
+      order: 2;
+      margin: 16px 0px;
+    }
+
+    .bottom {
+      display: flex;
+      margin-top: 20px;
+      padding: 4px 0 4px 8px;
+      order: 3;
+
+      .link {
+        margin-right: 19px;
+        font-size: 14px;
+        line-height: 20px;
+        color: $articleLink;
+      }
+
+      .comments {
+        color: $autorDateComments;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+}
