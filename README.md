@@ -1,6 +1,7 @@
 ## Getting Started
 
-This is my _Next.js_ blog app project
+This is my _Next.js_ blog app project.
+The task is [here]("https://github.com/Applifting/fullstack-exercise/blob/master/assignment.md").
 
 ## Technoloies
 
