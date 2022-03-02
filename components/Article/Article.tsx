@@ -1,7 +1,7 @@
 import Image from "next/Image";
 import style from "./Article.module.scss";
 
-interface IProps {
+export interface IProps {
   imageSrc: string;
   title: string;
   author: string;
