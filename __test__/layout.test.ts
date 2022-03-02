@@ -25,3 +25,17 @@ test("Get Logo", async (t) => {
   const logo = Selector("img").withAttribute("alt", "Logo");
   await t.expect(logo.visible).ok();
 });
+
+// Links
+
+test("Get index page title", async (t) => {
+  const title = Selector("title");
+  await t.expect(title.innerText).eql("Blog App");
+});
+
+test("Get login page title", async (t) => {
+  const link = Selector("#login");
+  await t.click(link);
+  const title = Selector("title");
+  await t.expect(title.innerText).eql("Log in");
+});

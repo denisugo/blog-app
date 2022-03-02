@@ -32,6 +32,7 @@
         margin: 11px 0;
         display: flex;
         align-items: center;
+        text-decoration: none;
       }
       .recent {
         margin-left: 7px;
@@ -58,6 +59,7 @@
           font-size: 1rem;
           color: $navTextLogin;
           margin-right: 10px;
+          text-decoration: none;
         }
         .ri_logo {
           width: 14px;

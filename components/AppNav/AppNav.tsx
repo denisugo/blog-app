@@ -1,5 +1,7 @@
 import style from "./AppNav.module.scss";
 import Image from "next/image";
+import Link from "next/link";
+
 function AppNav() {
   return (
     <div className={style.nav}>
@@ -14,19 +16,25 @@ function AppNav() {
           />
         </div>
         <div className={style.menu_items}>
-          <a id="recent" className={`${style.item} ${style.recent}`}>
-            Recent Articles
-          </a>
-          <a id="about" className={`${style.item} ${style.about}`}>
-            About
-          </a>
+          <Link href="/">
+            <a id="recent" className={`${style.item} ${style.recent}`}>
+              Recent Articles
+            </a>
+          </Link>
+          <Link href="/about">
+            <a id="about" className={`${style.item} ${style.about}`}>
+              About
+            </a>
+          </Link>
         </div>
 
         <div className={style.right_items}>
           <div className={style.signin}>
-            <a id="login" className={style.login}>
-              Log in
-            </a>
+            <Link href="/login">
+              <a id="login" className={style.login}>
+                Log in
+              </a>
+            </Link>
             <div className={style.ri_logo}>
               <Image
                 src={"/icons/arrow.svg"}

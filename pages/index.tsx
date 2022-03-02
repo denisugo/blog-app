@@ -10,6 +10,7 @@ const Home: NextPage<{ articles: IProps[] }> = ({ articles }) => {
 export default Home;
 
 export const getServerSideProps = async () => {
+  // Fetch data from db
   const response = await fetch("http://localhost:3000/api/db");
   const articles = await response.json();
   return { props: { articles } };
