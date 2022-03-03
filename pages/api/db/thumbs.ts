@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { IProps } from "../../components/Article/Article";
+import { IProps } from "../../../components/Article/Article";
 
 /**
  * @swagger
@@ -35,7 +35,7 @@ import { IProps } from "../../components/Article/Article";
 
 /**
  * @swagger
- * /api/db:
+ * /api/db/thumbs:
  *   get:
  *     description: Returns the articles
  *     responses:

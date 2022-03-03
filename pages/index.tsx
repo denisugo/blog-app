@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { IProps } from "../components/Article/Article";
 import RecentArticles from "../components/RecentArticles/RecentArticles";
-import { getArticles } from "./api/db";
+import routes from "../config/apiRoutes";
 
 const Home: NextPage<{ articles: IProps[] }> = ({ articles }) => {
   return <RecentArticles articles={articles} />;
@@ -11,7 +11,7 @@ export default Home;
 
 export const getServerSideProps = async () => {
   // Fetch data from db
-  const response = await fetch("http://localhost:3000/api/db");
+  const response = await fetch(routes.thumbs);
   const articles = await response.json();
   return { props: { articles } };
 };
