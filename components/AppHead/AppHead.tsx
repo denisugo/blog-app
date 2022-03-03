@@ -8,7 +8,7 @@ interface IProps {
 function AppHead({ title, description }: IProps) {
   return (
     <Head>
-      <title>Create Next App</title>
+      <title>{title}</title>
       <meta
         name="description"
         content={description ? description : "This is my awesome blog app"}

@@ -4,13 +4,13 @@ import AppNav from "../AppNav/AppNav";
 
 interface IProps {
   children: any;
-  title: string;
+  title?: string;
 }
 
 function AppLayout({ children, ...pageProps }: IProps) {
   return (
     <>
-      <AppHead title={pageProps.title} />
+      <AppHead title={pageProps.title || "Blog App"} />
       <AppNav />
       <main>{children} </main>
     </>

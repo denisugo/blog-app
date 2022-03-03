@@ -12,13 +12,16 @@
   },
   "dependencies": {
     "next": "12.1.0",
+    "next-swagger-doc": "^0.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "sass": "^1.49.9"
+    "sass": "^1.49.9",
+    "swagger-ui-react": "^4.6.1"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
+    "@types/swagger-ui-react": "^4.1.1",
     "eslint": "8.9.0",
     "eslint-config-next": "12.1.0",
     "testcafe": "^1.18.4",
