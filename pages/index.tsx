@@ -11,7 +11,7 @@ export default Home;
 
 export const getServerSideProps = async () => {
   // Fetch data from db
-  const response = await fetch(routes.thumbs);
+  const response = await fetch(routes.recentArticles);
   const articles = await response.json();
   return { props: { articles } };
 };

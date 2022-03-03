@@ -35,7 +35,7 @@ import { IProps } from "../../../components/Article/Article";
 
 /**
  * @swagger
- * /api/db/thumbs:
+ * /api/db/recent-articles:
  *   get:
  *     description: Returns the articles
  *     responses:

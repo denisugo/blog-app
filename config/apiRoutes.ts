@@ -1,3 +1,3 @@
 export default {
-  thumbs: "http://localhost:3000/api/db/thumbs",
+  recentArticles: "http://localhost:3000/api/db/recent-articles",
 };
