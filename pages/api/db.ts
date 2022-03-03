@@ -1,6 +1,53 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { IProps } from "../../components/Article/Article";
 
+/**
+ * @swagger
+ *  components:
+ *    schemas:
+ *      Article_thumb:
+ *        type: object
+ *        properties:
+ *          title:
+ *            type: string
+ *            description: The title
+ *          text:
+ *            type: string
+ *            description: The text preview
+ *          date:
+ *            type: string
+ *            description: The date
+ *          author:
+ *            type: string
+ *            description: The author
+ *          imageSrc:
+ *            type: string
+ *            description: The image src
+ *          numOfComments:
+ *            type: integer
+ *            description: The number of comments
+ *
+ *      Article_thumbs:
+ *        type: array
+ *        items:
+ *          $ref: '#/components/schemas/Article_thumb'
+ */
+
+/**
+ * @swagger
+ * /api/db:
+ *   get:
+ *     description: Returns the articles
+ *     responses:
+ *       200:
+ *         description: Articles
+ *         content:
+ *          application/json:
+ *            schema:
+ *              $ref: '#/components/schemas/Article_thumbs'
+
+ */
+
 export const getArticles = async (): Promise<IProps[]> => {
   return [
     {
