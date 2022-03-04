@@ -1,5 +1,5 @@
 import { Selector } from "testcafe";
-import routesForTest from "../config/routesForTest";
+import routesForTest from "../../config/routesForTest";
 
 fixture`Get Recent articles`.page`${routesForTest.home}`;
 
