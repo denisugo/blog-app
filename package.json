@@ -9,7 +9,8 @@
     "lint": "next lint",
     "e2e": "testcafe --concurrency 3 chrome:headless __test__/e2e/*",
     "e2e:github": "testcafe --concurrency 3 chrome:headless __test__/e2e/* --app 'yarn dev'",
-    "unit": "jest --watch --setupFilesAfterEnv"
+    "unit": "jest --watch --setupFilesAfterEnv",
+    "unit:github": "jest --setupFilesAfterEnv"
   },
   "dependencies": {
     "axios": "^0.26.0",
