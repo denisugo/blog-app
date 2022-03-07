@@ -1,4 +1,4 @@
 export default {
-  recentArticles: "http://localhost:3000/api/db/recent-articles",
-  login: "http://localhost:3000/api/db/login",
+  recentArticles: `${process.env.NEXT_PUBLIC_HOST}/api/db/recent-articles`,
+  login: `${process.env.NEXT_PUBLIC_HOST}/api/db/login`,
 };

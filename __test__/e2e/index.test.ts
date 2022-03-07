@@ -1,7 +1,7 @@
 import { Selector } from "testcafe";
-import routesForTest from "../../config/routesForTest";
+import routes from "../../config/routes";
 
-fixture`Get Recent articles`.page`${routesForTest.home}`;
+fixture`Get Recent articles`.page`${routes.home}`;
 
 test("Get two articles", async (t) => {
   const items = Selector("span").withText("·");

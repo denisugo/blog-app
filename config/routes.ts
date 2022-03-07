@@ -1,4 +1,4 @@
 export default {
-  home: "http://localhost:3000/",
-  login: "http://localhost:3000/login",
+  home: `${process.env.NEXT_PUBLIC_HOST}`,
+  login: `${process.env.NEXT_PUBLIC_HOST}/login`,
 };

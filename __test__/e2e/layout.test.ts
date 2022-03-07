@@ -1,7 +1,7 @@
 import { Selector } from "testcafe";
-import routesForTest from "../../config/routesForTest";
+import routes from "../../config/routes";
 
-fixture`Get header items`.page`${routesForTest.home}`;
+fixture`Get header items`.page`${routes.home}`;
 
 test("Get Recent Articles link item", async (t) => {
   const recentArticlesLink = Selector("#recent");
