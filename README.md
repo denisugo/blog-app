@@ -27,6 +27,6 @@ The task is [here]("https://github.com/Applifting/fullstack-exercise/blob/master
 
 - Swagger (check /api-doc endpoint)
 
-## The task origin
+## The link to the website
 
-https://github.com/Applifting/fullstack-exercise/blob/master/assignment.md
+https://blog-app-sigma-tan.vercel.app
