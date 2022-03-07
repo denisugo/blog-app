@@ -1,10 +1,10 @@
 import { Selector } from "testcafe";
-import routesForTest from "../../config/routesForTest";
+import routes from "../../config/routes";
 
 const email = "email@example.com";
 const password = "password";
 
-fixture`Log in`.page`${routesForTest.login}`;
+fixture`Log in`.page`${routes.login}`;
 
 test("Log a user in", async (t) => {
   const emailInput = Selector("input").withAttribute("name", "email");
