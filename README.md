@@ -22,3 +22,11 @@ The task is [here]("https://github.com/Applifting/fullstack-exercise/blob/master
 ### Bundling and routing
 
 - Next.js
+
+### Documentation
+
+- Swagger (check /api-doc endpoint)
+
+## The task origin
+
+https://github.com/Applifting/fullstack-exercise/blob/master/assignment.md
