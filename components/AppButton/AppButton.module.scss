@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.button {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  margin-top: 16px;
+  padding: 6px 12px;
+  align-self: flex-end;
+
+  background-color: $formButton;
+  border: 1px solid $formButton;
+  color: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  line-height: 24px;
+}

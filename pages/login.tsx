@@ -1,7 +1,8 @@
 import React from "react";
+import AppForm from "../components/AppForm/AppForm";
 
 function login() {
-  return <div>login page</div>;
+  return <AppForm />;
 }
 
 export default login;
